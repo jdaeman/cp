@@ -20,3 +20,7 @@ target_link_libraries(cpisfun2 ortools::ortools)
 add_executable(golomb src/golomb.cc)
 target_include_directories(golomb PUBLIC ${ORTOOLS_INCLUDE_DIRS})
 target_link_libraries(golomb ortools::ortools)
+
+add_executable(nqueen1 src/nqueen1.cc)
+target_include_directories(nqueen1 PUBLIC ${ORTOOLS_INCLUDE_DIRS})
+target_link_libraries(nqueen1 ortools::ortools)
