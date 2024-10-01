@@ -8,3 +8,7 @@ find_package(ortools CONFIG REQUIRED)
 add_executable(tsp src/tsp.cc)
 target_include_directories(tsp PUBLIC ${ORTOOLS_INCLUDE_DIRS})
 target_link_libraries(tsp ortools::ortools)
+
+add_executable(cpisfun src/cp_is_fun.cc)
+target_include_directories(cpisfun PUBLIC ${ORTOOLS_INCLUDE_DIRS})
+target_link_libraries(cpisfun ortools::ortools)
