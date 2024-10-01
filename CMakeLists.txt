@@ -12,3 +12,11 @@ target_link_libraries(tsp ortools::ortools)
 add_executable(cpisfun src/cp_is_fun.cc)
 target_include_directories(cpisfun PUBLIC ${ORTOOLS_INCLUDE_DIRS})
 target_link_libraries(cpisfun ortools::ortools)
+
+add_executable(cpisfun2 src/cp_is_fun2.cc)
+target_include_directories(cpisfun2 PUBLIC ${ORTOOLS_INCLUDE_DIRS})
+target_link_libraries(cpisfun2 ortools::ortools)
+
+add_executable(golomb src/golomb.cc)
+target_include_directories(golomb PUBLIC ${ORTOOLS_INCLUDE_DIRS})
+target_link_libraries(golomb ortools::ortools)
